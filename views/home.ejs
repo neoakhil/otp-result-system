@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EAMCET Result - Enter Phone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      color: #3b7bd4;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    button {
+      background-color: #1b1f1b;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eapcet Result</h1>
+  <h2>Enter Parent Phone Number</h2>
+  <form action="/send-otp" method="POST">
+    <input type="text" name="phone" placeholder="Phone Number" required />
+    <button type="submit">Send OTP</button>
+  </form>
+</body>
+</html>

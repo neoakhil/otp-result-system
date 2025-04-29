@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your EAMCET Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      color: #0c0d0c;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    .result {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .result p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Result for <%= student.student_name %></h1>
+  <div class="result">
+    <p><strong>Hall Ticket No:</strong> <%= student.hall_ticket_no %></p>
+    <p><strong>Parent Name:</strong> <%= student.parent_name %></p>
+    <p><strong>IPE Marks:</strong> <%= student.ipe_total %> / 540</p>
+    <p><strong>EAMCET Marks:</strong> <%= student.eamcet_marks %> / 160</p>
+    <p><strong>Final Score:</strong> <%= student.final_score.toFixed(2) %></p>
+    <p><strong>Rank:</strong> <%= student.rank_position %></p>
+  </div>
+</body>
+</html>
